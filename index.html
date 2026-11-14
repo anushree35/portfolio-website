@@ -343,6 +343,8 @@ nav.scrolled{
   color:var(--green);background:var(--green2);border-color:var(--green-border);
 }
 .exp-badge.done{color:var(--muted);background:rgba(255,255,255,.04);border-color:var(--dim)}
+.exp-badge.incoming{color:var(--pink);background:rgba(196,84,122,.1);border-color:var(--border-pink)}
+.exp-badge.incoming::before{background:var(--pink)!important;box-shadow:0 0 6px var(--pink)!important}
 /* pulsing dot on active badges */
 .exp-badge:not(.done)::before{
   content:'';display:inline-block;width:5px;height:5px;
@@ -642,7 +644,7 @@ footer a:hover{color:var(--accent)}
     <a href="#projects">projects</a>
     <a href="#skills">skills</a>
     <a href="#about">about</a>
-    <a href="#gallery">life</a>
+    <a href="#gallery">life + photography</a>
   </div>
   <a href="mailto:anushreesabade@gmail.com" class="nav-cta">say hi</a>
 </nav>
@@ -712,6 +714,20 @@ footer a:hover{color:var(--accent)}
     <span class="section-label reveal">Career</span>
     <h2 class="section-heading reveal">Where I've <em>worked.</em></h2>
     <div class="exp-grid">
+
+      <div class="exp-card reveal">
+        <div class="exp-top">
+          <span class="exp-badge incoming">Incoming</span>
+          <span class="exp-date">Accepted Nov 2026</span>
+        </div>
+        <div class="exp-org">Travelers Insurance</div>
+        <div class="exp-role">Software Engineering Intern</div>
+        <div class="exp-extra">
+          <p class="exp-desc">Returning to Travelers after my AI research fellowship, this time as a software engineering intern. The fellowship is what opened this door.</p>
+          <div class="exp-skills"><span>Software Engineering</span></div>
+        </div>
+        <span class="exp-hint">+</span>
+      </div>
 
       <div class="exp-card reveal">
         <div class="exp-top">
@@ -998,7 +1014,7 @@ footer a:hover{color:var(--accent)}
 <section id="gallery" class="section section-alt">
   <div class="container">
     <span class="section-label reveal">just life</span>
-    <h2 class="section-heading reveal"><em>Life.</em></h2>
+    <h2 class="section-heading reveal">Life + <em>photography.</em></h2>
     <p class="gallery-sub reveal">food &nbsp;·&nbsp; photos &nbsp;·&nbsp; paintings &nbsp;·&nbsp; legos &nbsp;·&nbsp; travel &nbsp;·&nbsp; and everything else</p>
 
     <!-- right side stickers -->
