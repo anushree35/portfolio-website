@@ -603,6 +603,10 @@ footer a:hover{color:var(--accent)}
   100%{transform:rotate(var(--r,0deg)) scale(1)}
 }
 @media(max-width:700px){.scatter-sticker{display:none}}
+.vlog-soon{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:-8px 0 36px;padding:16px 20px;border:1px solid var(--border-pink);border-radius:12px;background:var(--bg3);max-width:720px}
+.vlog-tag{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);white-space:nowrap}
+.vlog-soon p{font-size:13px;color:var(--muted);line-height:1.6;flex:1;min-width:220px}
+.vlog-soon strong{color:var(--text);font-weight:500}
 .gallery-grid{columns:3;column-gap:14px}
 .gallery-item{break-inside:avoid;margin-bottom:16px}
 .gallery-media{
@@ -793,7 +797,7 @@ footer a:hover{color:var(--accent)}
         <p class="jr-what">I started my school's photography club and grew it to 30+ members.</p>
         <div class="jr-lessons">
           <div><b>What was hard</b>Getting people to come back after the first meeting. Starting something is easy. Keeping it going while doing my classes was the hard part.</div>
-          <div class="learned"><b>What I learned</b>Leading is mostly being consistent. When I showed up every week with a plan, people kept coming.</div>
+          <div class="learned"><b>What I learned</b>The club taught me a lot of skills I still carry. I keep teaching my friends how to take and edit photos, so it never really stopped.</div>
         </div>
         <a class="jr-more" href="https://thebobcatprowl.com/13525/features-features/smile-for-a-picture/" target="_blank" rel="noopener">Read the Bobcat Prowl article about the club &#8594;</a>
       </div>
@@ -803,7 +807,7 @@ footer a:hover{color:var(--accent)}
         <p class="jr-what">I built a full-stack system for Hartford Hospital's prescription food assistance program using Python, Flask, React, and PostgreSQL.</p>
         <div class="jr-lessons">
           <div><b>What was hard</b>It was my first time building something for real people at a real organization. What I thought was cool wasn't always what they actually needed.</div>
-          <div class="learned"><b>What I learned</b>Talk to the people who are going to use it before you write the code. It saves a lot of rebuilding.</div>
+          <div class="learned"><b>What I learned</b>It connected me with a lot of people in the medical field, which would have helped if I had gone premed. More than that, it taught me how to network, and I carry that into the tech world now.</div>
         </div>
       </div>
       <div class="jr-item reveal">
@@ -825,7 +829,7 @@ footer a:hover{color:var(--accent)}
         <p class="jr-what">I set up a food recovery program that sends 40 to 60 pounds of food a week to local pantries.</p>
         <div class="jr-lessons">
           <div><b>What was hard</b>Keeping it running every single week and coordinating with everyone involved, not just getting it started.</div>
-          <div class="learned"><b>What I learned</b>A project really matters when it can keep going without you. I had to set it up so other people could run it too.</div>
+          <div class="learned"><b>What I learned</b>How to talk to people in charge and how to get a big project moving and keep it going.</div>
         </div>
       </div>
       <div class="jr-item reveal">
@@ -834,7 +838,7 @@ footer a:hover{color:var(--accent)}
         <p class="jr-what">I competed in Miss Teen Bharat Connecticut and placed first runner-up.</p>
         <div class="jr-lessons">
           <div><b>What was hard</b>Getting up on a stage in front of a big audience and staying confident through every round.</div>
-          <div class="learned"><b>What I learned</b>Confidence is something you practice. After that stage, presentations and interviews feel a lot less scary.</div>
+          <div class="learned"><b>What I learned</b>It brought me closer to my community and gave me a platform to speak on things I care about. It built my confidence and the way I carry myself. I also met so many amazing girls and women. Women&#39;s empowerment is really important to me, from Girls Who Code and Girl Scouts to PEO STAR and women&#39;s philanthropy.</div>
         </div>
         <figure class="jr-img jr-img-sm">
           <img src="photos/pageant.jpg" alt="Miss Teen Bharat Connecticut 2024 crowning, Anushree in the navy dress on the right as first runner-up" loading="lazy">
@@ -879,7 +883,7 @@ footer a:hover{color:var(--accent)}
       <div class="jr-item reveal">
         <span class="jr-when">Summer 2026</span>
         <h3 class="jr-title">Front-end lead on Therapify, Cigna practicum</h3>
-        <p class="jr-what">I was the front-end lead on Therapify, a project in the Cigna-sponsored practicum at UConn.</p>
+        <p class="jr-what">I was the front-end lead on Therapify, a mental health app our team built in the Cigna-sponsored NEXT practicum at UConn.</p>
         <div class="jr-lessons">
           <div><b>What was hard</b>Leading other people for the first time on a real team, keeping everyone's work consistent, and hitting deadlines.</div>
           <div class="learned"><b>What I learned</b>Communication is just as much the job as coding. Checking in early saved us from a lot of problems later.</div>
@@ -908,7 +912,7 @@ footer a:hover{color:var(--accent)}
         <p class="jr-what">I'm a commuter student, and I work as an IT technician at the UConn Foundation and as a tutor at Mathnasium.</p>
         <div class="jr-lessons">
           <div><b>What was hard</b>Time. Between the commute, work, and classes, there aren't a lot of free hours.</div>
-          <div class="learned"><b>What I learned</b>I plan my week ahead of time so I know where everything fits. Work also taught me things classes don't, like explaining things clearly and staying calm when something breaks.</div>
+          <div class="learned"><b>What I learned</b>Time management. I&#39;ve had to get really good at planning my week so school, work, and everything else fit.</div>
         </div>
       </div>
       <div class="jr-item reveal">
@@ -1066,10 +1070,29 @@ footer a:hover{color:var(--accent)}
         </div>
       </div>
 
-      <div class="proj-card reveal" role="button" tabindex="0" aria-label="Course Management System project">
+      <div class="proj-card reveal" role="button" tabindex="0" aria-label="Therapify project">
         <div class="proj-inner">
           <div class="proj-front">
             <div class="proj-num">02</div>
+            <div>
+              <h3 class="proj-name">Therapify</h3>
+              <p class="proj-short">A mental health app built in the Cigna NEXT practicum. I was the front-end lead.</p>
+            </div>
+          </div>
+          <div class="proj-back">
+            <div>
+              <div class="proj-back-label">Project 02</div>
+              <div class="proj-back-name">Therapify</div>
+              <div class="proj-stack"><span>Front-End Lead</span><span>Mental Health</span><span>Cigna NEXT</span></div>
+            </div>
+            <a href="https://github.com/anushree35" target="_blank" rel="noopener" class="proj-link" data-todo="therapify-repo">View on GitHub <span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card reveal" role="button" tabindex="0" aria-label="Course Management System project">
+        <div class="proj-inner">
+          <div class="proj-front">
+            <div class="proj-num">03</div>
             <div>
               <h3 class="proj-name">Course Management System</h3>
               <p class="proj-short">Data structures project: LinkedQueue waitlist, HashMap prerequisites, full test suite.</p>
@@ -1077,7 +1100,7 @@ footer a:hover{color:var(--accent)}
           </div>
           <div class="proj-back">
             <div>
-              <div class="proj-back-label">Project 02</div>
+              <div class="proj-back-label">Project 03</div>
               <div class="proj-back-name">Course Management System</div>
               <div class="proj-stack"><span>Java</span><span>LinkedQueue</span><span>HashMap</span><span>JUnit</span></div>
             </div>
@@ -1089,7 +1112,7 @@ footer a:hover{color:var(--accent)}
       <div class="proj-card reveal" role="button" tabindex="0" aria-label="Snake Game project">
         <div class="proj-inner">
           <div class="proj-front">
-            <div class="proj-num">03</div>
+            <div class="proj-num">04</div>
             <div>
               <h3 class="proj-name">Snake Game</h3>
               <p class="proj-short">Built from scratch in middle school. The project that started everything.</p>
@@ -1097,7 +1120,7 @@ footer a:hover{color:var(--accent)}
           </div>
           <div class="proj-back">
             <div>
-              <div class="proj-back-label">Project 03</div>
+              <div class="proj-back-label">Project 04</div>
               <div class="proj-back-name">Snake Game</div>
               <div class="proj-stack"><span>Scratch</span><span>Python</span><span>Game Dev</span></div>
             </div>
@@ -1109,7 +1132,7 @@ footer a:hover{color:var(--accent)}
       <div class="proj-card reveal" role="button" tabindex="0" aria-label="Portfolio website project">
         <div class="proj-inner">
           <div class="proj-front">
-            <div class="proj-num">04</div>
+            <div class="proj-num">05</div>
             <div>
               <h3 class="proj-name">Portfolio Website</h3>
               <p class="proj-short">This site. Designed and built with vanilla HTML, CSS, and JavaScript.</p>
@@ -1117,7 +1140,7 @@ footer a:hover{color:var(--accent)}
           </div>
           <div class="proj-back">
             <div>
-              <div class="proj-back-label">Project 04</div>
+              <div class="proj-back-label">Project 05</div>
               <div class="proj-back-name">Portfolio Website</div>
               <div class="proj-stack"><span>HTML</span><span>CSS</span><span>Vanilla JS</span></div>
             </div>
@@ -1238,6 +1261,10 @@ footer a:hover{color:var(--accent)}
     <span class="section-label reveal">just life</span>
     <h2 class="section-heading reveal">Life + <em>photography.</em></h2>
     <p class="gallery-sub reveal">food &nbsp;·&nbsp; photos &nbsp;·&nbsp; paintings &nbsp;·&nbsp; legos &nbsp;·&nbsp; travel &nbsp;·&nbsp; and everything else</p>
+    <div class="vlog-soon reveal">
+      <span class="vlog-tag">Coming January 2027</span>
+      <p><strong>My vlogging channel.</strong> I just got a new video camera, and the first videos will be from my trip to Kerala, India.</p>
+    </div>
 
     <!-- right side stickers -->
     <span class="scatter-sticker" style="--r:-14deg;--dur:4.2s;--delay:0s;--sz:42px;top:0px;right:2%"      aria-hidden="true">🌴</span>
