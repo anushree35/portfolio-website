@@ -401,6 +401,11 @@ nav.scrolled{
 .exp-card.has-media:hover .exp-extra,.exp-card.has-media.open .exp-extra{max-height:560px}
 .exp-media{display:grid;grid-template-columns:1.5fr 1fr;gap:8px;margin-top:16px}
 .exp-media img{width:100%;height:170px;object-fit:cover;border-radius:8px;border:1px solid var(--border);display:block}
+.jr-link{display:block;text-decoration:none;transition:border-color .25s}
+.jr-link:hover{border-color:rgba(212,113,74,.4)}
+.jr-cap{display:block;font-size:12px;color:var(--accent);padding:10px 14px}
+.exp-link{display:inline-block;margin-top:14px;font-size:12px;color:var(--accent);text-decoration:none}
+.exp-link:hover{text-decoration:underline}
 .exp-desc{font-size:13px;color:var(--muted);line-height:1.8;margin-top:16px;margin-bottom:14px}
 .exp-skills{display:flex;flex-wrap:wrap;gap:6px}
 .exp-skills span{font-size:11px;color:var(--muted);border:1px solid var(--dim);padding:3px 10px;border-radius:4px}
@@ -827,6 +832,10 @@ footer a:hover{color:var(--accent)}
           <div><b>What was hard</b>It was way past anything from my classes. I had to learn machine learning and computer vision mostly on my own while the project was already moving.</div>
           <div class="learned"><b>What I learned</b>My CS classes are the starting point, not the whole thing. Going deeper on my own is what got me ready for this, and this fellowship is what led to my internship.</div>
         </div>
+        <a class="jr-img jr-link" href="https://anushree35.github.io/travelers-hail-pipeline/" target="_blank" rel="noopener">
+          <img src="photos/eye-in-the-sky.jpg" alt="Eye in the Sky project website homepage" loading="lazy">
+          <span class="jr-cap">See the Eye in the Sky site <span aria-hidden="true">&#8594;</span></span>
+        </a>
       </div>
       <div class="jr-item reveal">
         <span class="jr-when">Summer 2026</span>
@@ -903,6 +912,7 @@ footer a:hover{color:var(--accent)}
         <div class="exp-extra">
           <p class="exp-desc">ML applications for aerial property damage assessment using drone imagery. Computer vision for storm damage detection; anomaly detection for fraudulent claims. Selected for the UConn Tech Park Talent Incubator pilot.</p>
           <div class="exp-skills"><span>Python</span><span>Computer Vision</span><span>Machine Learning</span><span>Drone Imagery</span></div>
+          <a class="exp-link" href="https://anushree35.github.io/travelers-hail-pipeline/" target="_blank" rel="noopener" onclick="event.stopPropagation()">See the Eye in the Sky site &#8594;</a>
         </div>
         <span class="exp-hint">+</span>
       </div>
