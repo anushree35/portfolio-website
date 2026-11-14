@@ -172,6 +172,38 @@ nav.scrolled{
   transition:background .2s,border-color .2s;
 }
 .nav-cta:hover{background:rgba(212,113,74,.1);border-color:var(--accent)}
+/* journey */
+.success-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:80px}
+.success-box{background:var(--bg3);border:1px solid var(--border);padding:32px 34px}
+.success-box.now{border-color:var(--border-pink)}
+.success-when{display:block;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.success-box.now .success-when{color:var(--pink)}
+.success-box p{font-size:15px;color:var(--muted);line-height:1.85}
+.success-box p + p{margin-top:12px}
+.success-box strong{color:var(--text);font-weight:500}
+.success-note{font-size:12px;color:var(--muted);margin:-60px 0 72px;opacity:.8}
+.jr-list{position:relative;margin-left:6px;padding-left:38px;border-left:1px solid var(--border)}
+.jr-item{position:relative;padding-bottom:56px}
+.jr-item:last-child{padding-bottom:0}
+.jr-item::before{content:'';position:absolute;left:-43px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 4px var(--bg)}
+.jr-when{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.jr-title{font-family:var(--serif);font-size:28px;font-weight:400;color:var(--text);line-height:1.2;margin:8px 0}
+.jr-what{font-size:14px;color:var(--muted);line-height:1.8;max-width:700px}
+.jr-lessons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px;max-width:860px}
+.jr-lessons > div{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:16px 18px;font-size:13px;color:var(--muted);line-height:1.75}
+.jr-lessons b{display:block;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.jr-lessons .learned{border-color:var(--border-pink)}
+.jr-lessons .learned b{color:var(--pink)}
+.jr-img{margin-top:18px;max-width:560px;border-radius:10px;overflow:hidden;border:1px solid var(--border);background:var(--bg3)}
+.jr-img img{display:block;width:100%;height:auto}
+.jr-img figcaption{font-size:11px;color:var(--muted);padding:10px 14px}
+@media(max-width:760px){
+  .success-grid,.jr-lessons{grid-template-columns:1fr}
+  .success-box{padding:26px 22px}
+  .jr-list{padding-left:26px}
+  .jr-item::before{left:-31px}
+  .jr-title{font-size:24px}
+}
 /* hero */
 #hero{
   position:relative;min-height:100vh;
@@ -640,6 +672,7 @@ footer a:hover{color:var(--accent)}
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <a class="nav-logo" href="#hero">A·S</a>
   <div class="nav-links">
+    <a href="#journey">journey</a>
     <a href="#experience">experience</a>
     <a href="#projects">projects</a>
     <a href="#skills">skills</a>
@@ -707,6 +740,133 @@ footer a:hover{color:var(--accent)}
     <span>Girl Scout Gold Award</span><span class="accent">·</span>
   </div>
 </div>
+
+<!-- JOURNEY -->
+<section id="journey" class="section">
+  <div class="container">
+    <span class="section-label reveal">My path</span>
+    <h2 class="section-heading reveal">How I got <em>here.</em></h2>
+
+    <div class="success-grid reveal">
+      <div class="success-box">
+        <span class="success-when">What STEM success meant to me when I started college</span>
+        <p>I thought it was all about <strong>grades and networking</strong>. But I didn't really know what networking even meant. I just wanted to chase every new opportunity I could find.</p>
+      </div>
+      <div class="success-box now">
+        <span class="success-when">What it means to me now</span>
+        <p>I learned that it also means <strong>going deeper than what I learn in my CS classes</strong>. I've been doing LeetCode and getting better at the things I'm supposed to be good at.</p>
+        <p>I also learned to <strong>just apply and go for it</strong>, even when I don't feel ready. That's how I've found most of my opportunities.</p>
+      </div>
+    </div>
+    <p class="success-note reveal">I'll come back to this at the end of the semester and see if it changed.</p>
+
+    <div class="jr-list">
+      <div class="jr-item reveal">
+        <span class="jr-when">Middle school</span>
+        <h3 class="jr-title">My first project: a snake game</h3>
+        <p class="jr-what">I built a snake game from scratch. It was the first time I made something on a computer that actually worked.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>I had no idea what I was doing. Most of it was watching tutorials, breaking the code, and trying again.</div>
+          <div class="learned"><b>What I learned</b>You don't have to feel ready to start. I learned more from building one messy game than from reading about coding.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">High school</span>
+        <h3 class="jr-title">Founding the SWHS Photo Club</h3>
+        <p class="jr-what">I started my school's photography club and grew it to 30+ members.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>Getting people to come back after the first meeting. Starting something is easy. Keeping it going while doing my classes was the hard part.</div>
+          <div class="learned"><b>What I learned</b>Leading is mostly being consistent. When I showed up every week with a plan, people kept coming.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">High school</span>
+        <h3 class="jr-title">Food4Health for Hartford Hospital</h3>
+        <p class="jr-what">I built a full-stack system for Hartford Hospital's prescription food assistance program using Python, Flask, React, and PostgreSQL.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>It was my first time building something for real people at a real organization. What I thought was cool wasn't always what they actually needed.</div>
+          <div class="learned"><b>What I learned</b>Talk to the people who are going to use it before you write the code. It saves a lot of rebuilding.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">High school</span>
+        <h3 class="jr-title">Girl Scout Gold Award</h3>
+        <p class="jr-what">I set up a food recovery program that sends 40 to 60 pounds of food a week to local pantries.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>Keeping it running every single week and coordinating with everyone involved, not just getting it started.</div>
+          <div class="learned"><b>What I learned</b>A project really matters when it can keep going without you. I had to set it up so other people could run it too.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">2024 to 2025</span>
+        <h3 class="jr-title">NCWIT and PEO STAR</h3>
+        <p class="jr-what">I won the NCWIT Aspirations in Computing Connecticut State Award two years in a row and the PEO STAR Scholarship.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>Writing applications about myself. It felt like bragging, and I almost didn't apply.</div>
+          <div class="learned"><b>What I learned</b>You can't get things you don't apply for. This is the first time I learned to just go for it.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">Freshman year</span>
+        <h3 class="jr-title">Retaking Calculus II</h3>
+        <p class="jr-what">I had to retake Calc II.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>The first time, I didn't go to office hours. I thought I could figure it out on my own.</div>
+          <div class="learned"><b>What I learned</b>The second time I went to office hours every week, and it made a huge difference. Asking for help isn't a weakness. It's part of doing the work.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">2026</span>
+        <h3 class="jr-title">Eye in the Sky, Travelers AI Research Fellowship</h3>
+        <p class="jr-what">I worked on using computer vision and drone images to detect storm damage to properties, and on spotting fraudulent claims.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>It was way past anything from my classes. I had to learn machine learning and computer vision mostly on my own while the project was already moving.</div>
+          <div class="learned"><b>What I learned</b>My CS classes are the starting point, not the whole thing. Going deeper on my own is what got me ready for this, and this fellowship is what led to my internship.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">Summer 2026</span>
+        <h3 class="jr-title">Front-end lead on Therapify, Cigna practicum</h3>
+        <p class="jr-what">I was the front-end lead on Therapify, a project in the Cigna-sponsored practicum at UConn.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>Leading other people for the first time on a real team, keeping everyone's work consistent, and hitting deadlines.</div>
+          <div class="learned"><b>What I learned</b>Communication is just as much the job as coding. Checking in early saved us from a lot of problems later.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">2026 to now</span>
+        <h3 class="jr-title">Research with Dr. Yuyang Wang</h3>
+        <p class="jr-what">I'm doing undergraduate research with Dr. Yuyang Wang on integrated circuits for AR and VR.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>Coming from CS, circuits and hardware felt like a whole new language. I'm usually the person in the room who knows the least.</div>
+          <div class="learned"><b>What I learned</b>That's okay. Asking questions and reading a lot is how I'm catching up, and it's showing me a side of engineering I wouldn't have seen in my CS classes.</div>
+        </div>
+        <figure class="jr-img">
+          <img src="research-chip.webp" alt="Close-up of an integrated circuit layout" loading="lazy">
+          <figcaption>An example of the kind of chip layout I work with.</figcaption>
+        </figure>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">Every week</span>
+        <h3 class="jr-title">Working while commuting</h3>
+        <p class="jr-what">I'm a commuter student, and I work as an IT technician at UConn and as a tutor at Mathnasium.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>Time. Between the commute, work, and classes, there aren't a lot of free hours.</div>
+          <div class="learned"><b>What I learned</b>I plan my week ahead of time so I know where everything fits. Work also taught me things classes don't, like explaining things clearly and staying calm when something breaks.</div>
+        </div>
+      </div>
+      <div class="jr-item reveal">
+        <span class="jr-when">Now</span>
+        <h3 class="jr-title">LeetCode, Theta Tau, and Travelers</h3>
+        <p class="jr-what">I've been doing LeetCode regularly, I joined the Theta Tau engineering fraternity, and I accepted a software engineering internship at Travelers.</p>
+        <div class="jr-lessons">
+          <div><b>What was hard</b>LeetCode was humbling at first. A lot of problems I couldn't solve without looking at hints.</div>
+          <div class="learned"><b>What I learned</b>I'm getting better because I keep doing it. And I'm going for more opportunities because I learned to just apply.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="section section-alt">
@@ -977,6 +1137,7 @@ footer a:hover{color:var(--accent)}
           <li>Society of Women Engineers (SWE)</li>
           <li>Women in Computer Science (WiCS)</li>
           <li>Husky Developers</li>
+          <li>Theta Tau engineering fraternity</li>
           <li>Global House Learning Community, UConn</li>
           <li>Girl Scout Ambassador</li>
         </ul>
